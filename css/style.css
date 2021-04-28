@@ -1,0 +1,97 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 1000px;
+	background: grey;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+.box{
+	width: 100%;
+	height: 300px;
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.img{
+	width: 250px;
+	height: 150px;
+	overflow: hidden;
+	background: blue;
+	margin: 5px;
+}
+.img img{
+	width: 250px;
+	transition: all 2s;
+}
+.img img:hover{
+	transform: scale(1.5)
+}
+.o{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	margin: 15px;
+	transition: all 2s;
+}
+.rotate:hover{
+	transform: rotate(360deg);
+	border-radius: 50%;
+	background: pink;
+}
+.skew:hover{
+	transform: skewX(20deg);
+	background: aqua;
+	height: 250px;
+}
+.scale:hover{
+	transform: scale(1.5) translate(-50px,-50px);
+	border-radius: 50%;
+	background: rgba(38,238,0,1.00);
+}
+.translate:hover{
+	transform: translate(50px) rotate(180deg)
+}
+.car{
+	background: blue;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+.car img{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	transition: 2s;
+}
+.wheel{
+	width: 70px;
+	height: 70px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	transition: 2s;
+	border: 2px dashed white;
+	box-sizing: border-box;
+}
+.bx-1{
+	bottom: 0;
+	left: 52.5px;
+}
+.bx-2{
+	bottom: 0;
+	left: 382.5px;
+}
+.car:hover img{
+	transform: translateX(500px)
+}
+.car:hover .wheel{
+	transform: translateX(500px) rotate(360deg)
+}
